@@ -1,0 +1,53 @@
+.container-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: repeat(6, 3rem);
+    column-gap: 5px;
+    row-gap: 15px;
+}
+
+.buttons{
+    transition: .5s;
+    border: solid 1px transparent;
+    /* background-color: rgb(35, 34, 34); */
+    background-color: #2D6080;
+    border-radius: 5px;
+    color:white;
+    font-size: 1rem;
+
+    
+}
+
+.buttons:hover{
+    transition: .5s;
+    cursor: pointer;
+    background: #2A338C;
+}
+
+.upper{
+    vertical-align: super;
+    font-size: smaller;
+    font-style: oblique;
+}
+
+.lower{
+    vertical-align: bottom;
+    font-size: smaller;
+    font-style: oblique;
+}
+.result{
+    transition: .5s;
+    border: solid 0px transparent;
+    background-color: #2A338C;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.result:hover{
+    border: solid 0px transparent;
+    background-color: #ff6767;
+    border-radius: 5px;
+    font-size: 1rem;
+}

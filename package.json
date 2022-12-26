@@ -1,6 +1,7 @@
 {
   "name": "calculator",
   "version": "0.0.0",
+  "author": "Pedro M.G.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

@@ -1,0 +1,43 @@
+<div class="container-buttons">
+    <button (click)="addOperation('%')" class="buttons">%</button>
+    <button (click)="clearEntry()" class="buttons">CE</button>
+    <button (click)="clear()" class="buttons">C</button>
+    <button (click)="deleteChar()" class="buttons">DEL</button>
+
+    <button (click)="partido()" class="buttons">
+        <span class="upper">1</span>
+        /x
+    </button>
+    <button (click)="elevado()" class="buttons">X 
+        <span class="upper">2</span>
+    </button>
+    <button (click)="raizCuadrada()" class="buttons">
+        <span class="upper">2</span>
+        √x
+    </button>
+    <button (click)="addOperation('/')" class="buttons">÷</button>
+
+    <button (click)="addNumbers('7')" class="buttons">7</button>
+    <button (click)="addNumbers('8')" class="buttons">8</button>
+    <button (click)="addNumbers('9')" class="buttons">9</button>
+    <button (click)="addOperation('*')" class="buttons">X</button>
+
+    <button (click)="addNumbers('4')" class="buttons">4</button>
+    <button (click)="addNumbers('5')" class="buttons">5</button>
+    <button (click)="addNumbers('6')" class="buttons">6</button>
+    <button (click)="addOperation('-')" class="buttons">-</button>
+
+    <button (click)="addNumbers('1')" class="buttons">1</button>
+    <button (click)="addNumbers('2')" class="buttons">2</button>
+    <button (click)="addNumbers('3')" class="buttons">3</button>
+    <button (click)="addOperation('+')" class="buttons">+</button>
+
+    <button (click)="reverseOperator()" class="buttons">        
+        <span class="upper">+</span>
+        /
+        <span class="lower">-</span>
+    </button>
+    <button (click)="addNumbers('0')" class="buttons">0</button>
+    <button (click)="addDecimal()" class="buttons">,</button>
+    <button (click)="resultado()" class="result">=</button>
+</div>

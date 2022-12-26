@@ -1,0 +1,8 @@
+.container{
+    border: solid 0px black;
+    border-radius: 5px;
+    background-color: #3D95CC ;
+    width: fit-content;
+    padding: 1rem;
+    box-shadow: 10px 10px 30px 10px;
+}
