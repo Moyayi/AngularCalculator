@@ -22,31 +22,35 @@ export class ButtonsComponent{
   }
 
   clearEntry(){
-      alert("WIP")
+      this.servicio.clearEntry()
   }
 
   clear(){
-    alert("WIP")
+    this.servicio.clear()
   }
 
   deleteChar(){
-    alert("WIP")
+    this.servicio.del();
+  }
+
+  porcentaje(){
+    this.servicio.porcent();
   }
 
   partido(){
-    alert("WIP")
+    this.servicio.partido();
   }
 
   elevado(){
-    alert("WIP")
+    this.servicio.elevado();
   }
 
   raizCuadrada(){
-    alert("WIP")
+    this.servicio.raizCuadrada()
   }
 
   reverseOperator(){
-    alert("WIP")
+    this.servicio.alterExpresion();
   }
 
   resultado(){

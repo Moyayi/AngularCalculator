@@ -15,8 +15,7 @@
 }
 
 .container-result > #history{
-    direction: rtl;
-    border: solid 1px green;
+    
     width: 100%;
     grid-area: a;
 }
@@ -24,16 +23,14 @@
     fill: white;
 }
 .container-result > #prevValue{
-    direction: rtl;
-    border: solid 1px black;
+    
     width: 100%;
     grid-area: b;
     height: 1rem;
 }
 
 .container-result > #value{
-    direction: rtl;
-    border: solid 1px purple;
+    
     width: 100%;
     height: 2rem;
     font-size: 2rem;
@@ -43,7 +40,7 @@
 .container-result > #memory{
     display: flex;
     justify-content: space-between;
-    border: solid 1px blue;
+    
     width: 100%;
     grid-area: d;
 
