@@ -57,7 +57,7 @@ export class ButtonsComponent{
     this.servicio.finishOperation();
   }
 
-
-
-  addDecimal(){}
+  addDecimal(){
+    this.servicio.addComma();
+  }
 }

@@ -8,7 +8,7 @@ export class ServiciosService {
   constructor() { }
   private _resultado : string = "";
   private _prevResultado : string = "";
-
+  private _comma : boolean = true;
   get resultado():string{
     return this._resultado;
   }
@@ -16,7 +16,6 @@ export class ServiciosService {
   get prevResultado():string{
     return this._prevResultado;
   }
-
 
   checkError():boolean {
     let status : boolean = false;
@@ -29,21 +28,28 @@ export class ServiciosService {
     return status;
   }
   checkEmpty():boolean{
-    let status : boolean = false;
-    if(this._resultado !== ""){
-      status = true;
+    let status : boolean = true;
+    if(this._resultado === ""){
+      status = false;
     }
     return status;
   }
 
+  addComma(){
+    if(this._comma){
+      this._resultado += '.'
+      this._comma = false;
+    }
+  }
 
   addOperation(op : string ){
-    this._prevResultado += this._resultado + op;
+    this._prevResultado += this._resultado +" "+ op;
     this._resultado = "";
+    this._comma = true;
   }
   
   addNumber(data : string ){
-    console.log(this._resultado)
+    if(this._resultado === "0" && this._resultado.length === 1) this._resultado = ""
     if(this.checkError()){
       this._resultado = ""
     }
@@ -53,14 +59,18 @@ export class ServiciosService {
   //TODO check if resultado is empty
   //TODO if nothing add 0 before value
   finishOperation(){
-    this._resultado = this._prevResultado + this._resultado;
-    try {
-      this._resultado  = eval(this._resultado ).toString(); 
-    } catch (error) {
-      this._resultado = "Error!"
+    if(this.checkEmpty()){
+      this._resultado = this._prevResultado + this._resultado;
+      try {
+        this._resultado  = eval(this._resultado ).toString();
+        if(!this._resultado.includes('.')) this._comma = true;
+      } catch (error) {
+        this._resultado = "Error!"
+      }
+    }else{
+      this._resultado = "0";
     }
     this._prevResultado = ""
-    console.log(this._resultado)
   }
 
   clear(){
