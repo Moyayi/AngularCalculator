@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ButtonsComponent } from '../components/buttons/buttons.component';
-import { ResultComponent } from '../components/result/result.component';
+import { ButtonsComponent } from './buttons/buttons.component';
+import { ResultComponent } from './result/result.component';
 
 import { CalculatorComponent } from './calculator.component';
 

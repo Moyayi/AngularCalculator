@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CalculatorModuleModule } from './calculator/calculator.module.module';
-
+import { ButtonsComponent } from './calculator/buttons/buttons.component';
 @NgModule({
   declarations: [
     AppComponent
@@ -13,7 +13,6 @@ import { CalculatorModuleModule } from './calculator/calculator.module.module';
     FormsModule,
     CalculatorModuleModule
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
