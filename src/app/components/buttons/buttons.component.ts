@@ -1,6 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { ServiciosService } from 'src/app/service/servicios.service';
 
+
+
+// @NgModule({
+//   imports: [],
+//   exports: [ButtonsComponent],
+//   declarations: [ButtonsComponent],
+//   providers:[]
+// })
 
 
 @Component({
@@ -8,6 +16,7 @@ import { ServiciosService } from 'src/app/service/servicios.service';
   templateUrl: './buttons.component.html',
   styleUrls: ['./buttons.component.css']
 })
+
 
 export class ButtonsComponent{
   
